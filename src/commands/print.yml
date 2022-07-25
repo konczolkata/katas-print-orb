@@ -1,0 +1,19 @@
+description: >
+  This command will print a greeting to a file.
+parameters:
+  to:
+    type: string
+    default: "World"
+    description: "Hello to whom?"
+  file_name:
+    desrciption: name of the file with the greeting
+    type: string
+    default: "hello.html"
+  
+steps:
+  - run:
+      environment:
+        PARAM_TO: <<parameters.to>>
+        PARAM_FILE: <<parameters.file_name>>
+      name: Hello greeting
+      command: <<include(scripts/print.sh)>>
