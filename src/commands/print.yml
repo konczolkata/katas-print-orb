@@ -6,7 +6,7 @@ parameters:
     default: "World"
     description: "Hello to whom?"
   file_name:
-    desrciption: name of the file with the greeting
+    description: name of the file with the greeting
     type: string
     default: "hello.html"
 
