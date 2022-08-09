@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello ${PARAM_TO}" >> ${PARAM_FILE}
+echo "Hello ${PARAM_TO}" >> "${PARAM_FILE}"
